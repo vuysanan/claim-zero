@@ -13,3 +13,4 @@ The project follows the application through three stages:
 The final result is a React application running in a Docker container on an Amazon ECS cluster backed by an EC2 instance, with deployments automated through a CI/CD pipeline.
 
 <img src="images/Picture1.png" alt="React application" width="1000">
+<img src="well earned cert/Codewrkx-Certificate-CWX-2026-0C9874.png" alt="Certificate" width="1000">
