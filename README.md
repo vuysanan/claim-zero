@@ -1,16 +1,15 @@
-# React + Vite
+# CLAIM ZERO
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A containerized React application deployed to AWS with Amazon ECR, Terraform, Amazon ECS on EC2, and a GitHub-based CI/CD pipeline using AWS CodePipeline and CodeBuild.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project follows the application through three stages:
 
-## React Compiler
+1. **Build** — Develop and containerize the React application with Docker.
+2. **Publish & Provision** — Push the Docker image to Amazon ECR and provision the AWS infrastructure with Terraform.
+3. **Automate** — Connect GitHub to AWS CodePipeline to automatically build and deploy changes to ECS.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The final result is a React application running in a Docker container on an Amazon ECS cluster backed by an EC2 instance, with deployments automated through a CI/CD pipeline.
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+<img src="images/Picture1.png" alt="React application" width="1000">
